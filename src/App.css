@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toglleBtn{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.container{
+  width: 1200px;
+  height: 300px;
+  background-color: rgb(110, 230, 246);
+  border-radius: 5px;
+}
+
+.container.dark{
+  background-color: rgb(43, 36, 36);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App{
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+  padding: 5px;
+  border-radius: 10px;
+  background-color: greenyellow;
+  cursor: pointer;
+  transition: all ease .3s;
+}
+
+.button:hover{
+  box-shadow: 10px 10px 100px rgb(10, 7, 7);
+}
+.container.dark .button:hover{
+  box-shadow: 10px 10px 100px rgb(255, 255, 255);
+}
+
+.cardList{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+}
+
+.container.dark .day-card-box{
+  background-color: rgb(203, 158, 158);
+  border: 1px solid white;
+}
+
+.day-card-box{
+  background-color: rgb(234, 223, 223);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin-right: 5px;
+}
+
+.input-box{
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: greenyellow;
+
+}
+
+.input-box select{
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
 }
